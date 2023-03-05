@@ -15,7 +15,7 @@ WT = st.number_input(label="Weight (WT), units = kilograms")
 # input 3
 SC = st.number_input(label="Serum Creatinine, units = milligram/deciliter")
 # input 4
-Recommended_total_daily_dose = st.number_input(label="Recommended_total_daily_dose")
+Recommended_total_daily_dose = st.number_input(label="Recommended Total Daily Dose")
 
 time_of_infusion= 2 #fixed at 2 hours
 
@@ -39,7 +39,7 @@ def calculate():
     st.write("Drug Clearance = ",round(drug_clearance,2))
     st.write("Ke = ",round(ke,2))
     #st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
-    st.write("The predicted trough = ",round(prediction,2))
+    st.write("The Predicted Trough = ",round(prediction,2))
 
 # -------------------- to perform Decision tree ----------------
     if dosing_freruency == 8 and dose > 15:
