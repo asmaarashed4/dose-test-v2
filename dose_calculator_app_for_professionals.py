@@ -18,7 +18,8 @@ SC = st.number_input(label="Serum Creatinine, units = milligram/deciliter")
 time_of_infusion= 2 #fixed at 2 hours
 
 # -------------------- The Dosing Freruency ----------------
-dosing_freruency = 8
+dosing_freruency = 8.00
+
 # -------------------- to calculate eq. ----------------
 def calculate():
     volume_of_distribution = 0.81*(WT/0.93)
@@ -35,17 +36,18 @@ def calculate():
     st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
     #st.write("The Predicted Trough = ",round(prediction,2))
 
-# -------------------- to perform Decision tree ----------------
-if dosing_freruency == 8 and prediction > 15:
- dosing_freruency == 12 
-elif dosing_freruency == 12 and prediction > 15:
- dosing_freruency == 18 
-elif dosing_freruency == 18 and prediction > 20:
- dosing_freruency == 24 
-elif dosing_freruency == 24 and prediction > 20:
- st.text('No Recommended dose for this patient')
-else:
- st.text('NA')
+# -------------------- to perform Decision tree ---------------
+    if dosing_freruency == 8.00 and prediction > 15:
+     dosing_freruency == 12.00 
+    elif dosing_freruency == 12 and prediction > 15:
+     dosing_freruency == 18 
+    elif dosing_freruency == 18 and prediction > 20:
+     dosing_freruency == 24 
+    elif dosing_freruency == 24 and prediction > 20:
+      st.text('No Recommended dose for this patient')
+    else:
+      st.text('NA')
+ 
 # -------------------- to run the button ----------------
 if st.button("Calculate Dose"):
     calculate()
