@@ -18,7 +18,7 @@ SC = st.number_input(label="Serum Creatinine, units = milligram/deciliter")
 time_of_infusion= 2 #fixed at 2 hours
 
 # -------------------- The Dosing Freruency ----------------
-frequency = 8
+dosing_freruency = 8
 # -------------------- to perform Decision tree ----------------
     if dosing_freruency == 8 and prediction > 15:
         dosing_freruency == 12 
@@ -30,7 +30,6 @@ frequency = 8
         st.text('No Recommended dose for this patient')
     else:
         st.text('NA')
-frequency = dosing_freruency
 # -------------------- to calculate eq. ----------------
 def calculate():
     volume_of_distribution = 0.81*(WT/0.93)
