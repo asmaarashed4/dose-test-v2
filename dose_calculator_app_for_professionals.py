@@ -20,16 +20,16 @@ time_of_infusion= 2 #fixed at 2 hours
 # -------------------- The Dosing Freruency ----------------
 dosing_freruency = 8
 # -------------------- to perform Decision tree ----------------
-    if dosing_freruency == 8 and prediction > 15:
-        dosing_freruency == 12 
-    elif dosing_freruency == 12 and prediction > 15:
-        dosing_freruency == 18 
-    elif dosing_freruency == 18 and prediction > 20:
-        dosing_freruency == 24 
-    elif dosing_freruency == 24 and prediction > 20:
-        st.text('No Recommended dose for this patient')
-    else:
-        st.text('NA')
+if dosing_freruency == 8 and prediction > 15:
+ dosing_freruency == 12 
+elif dosing_freruency == 12 and prediction > 15:
+ dosing_freruency == 18 
+elif dosing_freruency == 18 and prediction > 20:
+ dosing_freruency == 24 
+elif dosing_freruency == 24 and prediction > 20:
+ st.text('No Recommended dose for this patient')
+else:
+ st.text('NA')
 # -------------------- to calculate eq. ----------------
 def calculate():
     volume_of_distribution = 0.81*(WT/0.93)
