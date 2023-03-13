@@ -51,7 +51,7 @@ def calculate():
     elif dosing_freruency == 24 and dose > 20:
         st.text('No Recommended dose for this patient, please re-check the freruency')
     else:
-        st.text('NA')
+        st.text('')
 
 # -------------------- to predict the trough concentration using different frequencies ----------------
 
