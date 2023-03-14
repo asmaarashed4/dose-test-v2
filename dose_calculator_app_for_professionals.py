@@ -14,13 +14,15 @@ PMA = st.number_input(label="Post menstural age (PMA), units = weeks")
 WT = st.number_input(label="Weight (WT), units = kilograms")
 # input 3
 SC = st.number_input(label="Serum Creatinine, units = milligram/deciliter")
-
-time_of_infusion= 2 #fixed at 2 hours
+# input 4
+time_of_infusion= 2
+st.write("Time of infusion = fixed at 2 hours")
 
 # -------------------- The Dosing Freruency ----------------
+#input 5
 dosing_freruency = 8.00
 
-# -------------------- to perform Decision tree ---------------
+# -------------------- to calculate eq. ----------------
 def calculate():
    if dosing_freruency == 8.00:
     volume_of_distribution = 0.81*(WT/0.93)
