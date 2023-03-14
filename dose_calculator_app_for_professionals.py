@@ -32,7 +32,7 @@ def calculate():
     dose = Recommended_total_daily_dose * (dosing_freruency/24)                                      
     prediction =(((dose/(time_of_infusion*drug_clearance)))*(1-math.exp(-ke*time_of_infusion))/(1-math.exp(-ke*dosing_freruency)))*math.exp(-ke*(dosing_freruency-time_of_infusion))
     if prediction > 15:
-      dosing_freruency == 12.00
+      dosing_freruency = 12.00
 
    if dosing_freruency == 12.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -42,7 +42,7 @@ def calculate():
     dose = Recommended_total_daily_dose * (dosing_freruency/24)                                      
     prediction =(((dose/(time_of_infusion*drug_clearance)))*(1-math.exp(-ke*time_of_infusion))/(1-math.exp(-ke*dosing_freruency)))*math.exp(-ke*(dosing_freruency-time_of_infusion))
     if prediction > 15:
-      dosing_freruency == 18.00
+      dosing_freruency = 18.00
 
    if dosing_freruency == 18.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -52,7 +52,7 @@ def calculate():
     dose = Recommended_total_daily_dose * (dosing_freruency/24)                                      
     prediction =(((dose/(time_of_infusion*drug_clearance)))*(1-math.exp(-ke*time_of_infusion))/(1-math.exp(-ke*dosing_freruency)))*math.exp(-ke*(dosing_freruency-time_of_infusion))
     if prediction > 20:
-      dosing_freruency == 24.00
+      dosing_freruency = 24.00
    
    if dosing_freruency == 24.00:
     volume_of_distribution = 0.81*(WT/0.93)
