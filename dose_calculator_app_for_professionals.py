@@ -24,7 +24,7 @@ dosing_freruency = 8.00
 
 # -------------------- to calculate eq. ----------------
 def calculate():
-   if dosing_freruency == 8.00:
+ if dosing_freruency == 8.00:
     volume_of_distribution = 0.81*(WT/0.93)
     drug_clearance = (0.09*((WT/0.93)**0.75)) * ((0.6/SC)**0.48) * ((PMA**4.42)/ ((PMA**4.42)+(26.3**4.42)))
     ke= drug_clearance/volume_of_distribution
@@ -33,7 +33,7 @@ def calculate():
     prediction =(((dose/(time_of_infusion*drug_clearance)))*(1-math.exp(-ke*time_of_infusion))/(1-math.exp(-ke*dosing_freruency)))*math.exp(-ke*(dosing_freruency-time_of_infusion))
     if prediction > 15:
       dosing_freruency = 12.00
-   else:
+ else:
     st.text('Not 8')
     
    if dosing_freruency == 12.00:
