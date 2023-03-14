@@ -75,3 +75,4 @@ def calculate():
 # -------------------- to run the button ----------------
 if st.button("Calculate Dose"):
     calculate()
+    st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
