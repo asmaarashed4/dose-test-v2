@@ -35,8 +35,11 @@ def calculate():
     prediction =(((dose/(time_of_infusion*drug_clearance)))*(1-math.exp(-ke*time_of_infusion))/(1-math.exp(-ke*dosing_freruency)))*math.exp(-ke*(dosing_freruency-time_of_infusion))
     if prediction > 15:
       dosing_freruency = 12.00
-      st.text('Not 8')
-    
+    else:
+     st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
+     st.write("prediction",round(prediction,2))
+     st.write("dosing_freruency ",round(dosing_freruency,2))
+     
  if dosing_freruency == 12.00:
     volume_of_distribution = 0.81*(WT/0.93)
     drug_clearance = (0.09*((WT/0.93)**0.75)) * ((0.6/SC)**0.48) * ((PMA**4.42)/ ((PMA**4.42)+(26.3**4.42)))
@@ -46,9 +49,11 @@ def calculate():
     prediction =(((dose/(time_of_infusion*drug_clearance)))*(1-math.exp(-ke*time_of_infusion))/(1-math.exp(-ke*dosing_freruency)))*math.exp(-ke*(dosing_freruency-time_of_infusion))
     if prediction > 15:
       dosing_freruency = 18.00
- else:
-    st.text('Not 12')
-    
+    else:
+     st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
+     st.write("prediction",round(prediction,2))
+     st.write("dosing_freruency ",round(dosing_freruency,2))
+     
  if dosing_freruency == 18.00:
     volume_of_distribution = 0.81*(WT/0.93)
     drug_clearance = (0.09*((WT/0.93)**0.75)) * ((0.6/SC)**0.48) * ((PMA**4.42)/ ((PMA**4.42)+(26.3**4.42)))
@@ -58,9 +63,11 @@ def calculate():
     prediction =(((dose/(time_of_infusion*drug_clearance)))*(1-math.exp(-ke*time_of_infusion))/(1-math.exp(-ke*dosing_freruency)))*math.exp(-ke*(dosing_freruency-time_of_infusion))
     if prediction > 20:
       dosing_freruency = 24.00
- else:
-    st.text('Not 18')
-    
+    else:
+     st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
+     st.write("prediction",round(prediction,2))
+     st.write("dosing_freruency ",round(dosing_freruency,2))
+     
  if dosing_freruency == 24.00:
     volume_of_distribution = 0.81*(WT/0.93)
     drug_clearance = (0.09*((WT/0.93)**0.75)) * ((0.6/SC)**0.48) * ((PMA**4.42)/ ((PMA**4.42)+(26.3**4.42)))
@@ -70,9 +77,11 @@ def calculate():
     prediction =(((dose/(time_of_infusion*drug_clearance)))*(1-math.exp(-ke*time_of_infusion))/(1-math.exp(-ke*dosing_freruency)))*math.exp(-ke*(dosing_freruency-time_of_infusion))
     if prediction > 20:
       st.text('No Recommended dose for this patient')
- else:
-    st.text('Not 24')
-    
+    else:
+     st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
+     st.write("prediction",round(prediction,2))
+     st.write("dosing_freruency ",round(dosing_freruency,2))
+ 
  st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
  st.write("prediction",round(prediction,2))
  st.write("dosing_freruency ",round(dosing_freruency,2))
