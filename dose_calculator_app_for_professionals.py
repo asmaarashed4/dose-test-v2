@@ -24,6 +24,8 @@ dosing_freruency = 8.00
 
 # -------------------- to calculate eq. ----------------
 def calculate():
+ dosing_freruency = 8.00
+
  if dosing_freruency == 8.00:
     volume_of_distribution = 0.81*(WT/0.93)
     drug_clearance = (0.09*((WT/0.93)**0.75)) * ((0.6/SC)**0.48) * ((PMA**4.42)/ ((PMA**4.42)+(26.3**4.42)))
