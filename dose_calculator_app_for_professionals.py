@@ -33,8 +33,6 @@ def calculate():
       dosing_freruency == 12.00
     else:
       st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
-   else:
-      st.text('NA 1')
 
    if dosing_freruency == 12.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -47,8 +45,6 @@ def calculate():
       dosing_freruency == 18.00
     else:
       st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
-   else:
-      st.text('NA 2')
 
    if dosing_freruency == 18.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -61,8 +57,6 @@ def calculate():
       dosing_freruency == 24.00
     else:
       st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
-   else:
-      st.text('NA 3')
       
    if dosing_freruency == 24.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -75,8 +69,6 @@ def calculate():
       st.text('No Recommended dose for this patient')
     else:
       st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
-   else:
-      st.text('NA 4')
  
 # -------------------- to run the button ----------------
 if st.button("Calculate Dose"):
