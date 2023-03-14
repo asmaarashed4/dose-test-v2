@@ -45,20 +45,6 @@ def calculate():
     st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
     st.write("The Predicted Trough = ",round(prediction,2))
 
-"""    
-# -------------------- to perform Decision tree ----------------
-    if dosing_freruency == 8 and dose > 15:
-        st.text('Please choose the dosing freruency = 12 hours')
-    elif dosing_freruency == 12 and dose > 15:
-        st.text('Please choose the dosing freruency = 18 hours')
-    elif dosing_freruency == 18 and dose > 20:
-        st.text('Please choose the dosing freruency = 24 hours')
-    elif dosing_freruency == 24 and dose > 20:
-        st.text('No Recommended dose for this patient, please re-check the freruency')
-    else:
-        st.text('')
-"""
-
 # -------------------- to run the button ----------------
 if st.button("Calculate Dose"):
     calculate()
