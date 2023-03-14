@@ -18,12 +18,9 @@ SC = st.number_input(label="Serum Creatinine, units = milligram/deciliter")
 time_of_infusion= 2
 st.write("Time of infusion = fixed at 2 hours")
 
-# -------------------- The Dosing Freruency ----------------
-#input 5
-dosing_freruency = 8.00
-
 # -------------------- to calculate eq. ----------------
 def calculate():
+#input 5
  dosing_freruency = 8.00
 
  if dosing_freruency == 8.00:
@@ -37,8 +34,6 @@ def calculate():
       dosing_freruency = 12.00
     else:
      st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
-     st.write("prediction",round(prediction,2))
-     st.write("dosing_freruency ",round(dosing_freruency,2))
      
  if dosing_freruency == 12.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -51,8 +46,6 @@ def calculate():
       dosing_freruency = 18.00
     else:
      st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
-     st.write("prediction",round(prediction,2))
-     st.write("dosing_freruency ",round(dosing_freruency,2))
      
  if dosing_freruency == 18.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -65,8 +58,6 @@ def calculate():
       dosing_freruency = 24.00
     else:
      st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
-     st.write("prediction",round(prediction,2))
-     st.write("dosing_freruency ",round(dosing_freruency,2))
      
  if dosing_freruency == 24.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -79,12 +70,7 @@ def calculate():
       st.text('No Recommended dose for this patient')
     else:
      st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
-     st.write("prediction",round(prediction,2))
-     st.write("dosing_freruency ",round(dosing_freruency,2))
- 
- st.write("Recommended total daily dose in milligrams = ",round(Recommended_total_daily_dose,2))
- st.write("prediction",round(prediction,2))
- st.write("dosing_freruency ",round(dosing_freruency,2))
+
 # -------------------- to run the button ----------------
 if st.button("Calculate Dose"):
  calculate()
