@@ -33,7 +33,8 @@ def calculate():
     if prediction > 15:
       dosing_freruency = 12.00
     else:
-     st.write("Recommended dose = ",round(dose+dosing_freruency,2))
+     st.write("Recommended dose = ",round(dose,2))
+     st.write("Dosing freruency= ",round(dosing_freruency,2))
      
  if dosing_freruency == 12.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -45,7 +46,8 @@ def calculate():
     if prediction > 15:
       dosing_freruency = 18.00
     else:
-     st.write("Recommended dose = ",round(dose+dosing_freruency,2))
+     st.write("Recommended dose = ",round(dose,2))
+     st.write("Dosing freruency= ",round(dosing_freruency,2))
      
  if dosing_freruency == 18.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -57,7 +59,8 @@ def calculate():
     if prediction > 20:
       dosing_freruency = 24.00
     else:
-     st.write("Recommended dose = ",round(dose+dosing_freruency,2))
+     st.write("Recommended dose = ",round(dose,2))
+     st.write("Dosing freruency= ",round(dosing_freruency,2))
      
  if dosing_freruency == 24.00:
     volume_of_distribution = 0.81*(WT/0.93)
@@ -69,7 +72,8 @@ def calculate():
     if prediction > 20:
       st.text('No Recommended dose for this patient')
     else:
-     st.write("Recommended dose = ",round(dose+dosing_freruency,2))
+     st.write("Recommended dose = ",round(dose,2))
+     st.write("Dosing freruency= ",round(dosing_freruency,2))
 
 # -------------------- to run the button ----------------
 if st.button("Calculate Dose"):
