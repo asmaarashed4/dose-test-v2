@@ -69,7 +69,7 @@ def calculate():
     if prediction > 20:
       st.text('No Recommended dose for this patient')
     else:
-     st.write("Recommended dose = ,round(dose+dosing_freruency,2))
+     st.write("Recommended dose = ",round(dose+dosing_freruency,2))
 
 # -------------------- to run the button ----------------
 if st.button("Calculate Dose"):
