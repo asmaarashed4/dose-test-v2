@@ -2,7 +2,7 @@ import streamlit as st # to import libarary
 import math
 
 # ---------------- to creates the title -------------------
-st.title("Dose Calculator for Vancomycin in Neonates")
+st.title("Dose calculator for vancomycin in VLBW neonates, Alsultan model")
 # ---------------- to creates a horizontal line -------------------
 st.write("---")
  
