@@ -25,7 +25,7 @@ def calculate():
 
  if dosing_freruency == 8.00:
     volume_of_distribution = 1.75*(WT/2.9)
-    drug_clearance = (0.34*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
+    drug_clearance = (0.16*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
     ke= drug_clearance/volume_of_distribution
     Recommended_total_daily_dose = 450 * drug_clearance  
     dose = Recommended_total_daily_dose /3            #given every 8 hours                            
@@ -39,7 +39,7 @@ def calculate():
      
  if dosing_freruency == 12.00:
     volume_of_distribution = 1.75*(WT/2.9)
-    drug_clearance = (0.34*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
+    drug_clearance = (0.16*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
     ke= drug_clearance/volume_of_distribution
     Recommended_total_daily_dose = 450 * drug_clearance  
     dose = Recommended_total_daily_dose /2     #given every 12 hours                                    
@@ -53,7 +53,7 @@ def calculate():
 
  if dosing_freruency == 18.00:
     volume_of_distribution = 1.75*(WT/2.9)
-    drug_clearance = (0.34*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
+    drug_clearance = (0.16*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
     ke= drug_clearance/volume_of_distribution
     Recommended_total_daily_dose = 450 * drug_clearance  
     dose = Recommended_total_daily_dose/1.33          #given every 18 hours                             
@@ -67,7 +67,7 @@ def calculate():
 
  if dosing_freruency == 24.00:
     volume_of_distribution = 1.75*(WT/2.9)
-    drug_clearance = (0.34*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
+    drug_clearance = (0.16*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
     ke= drug_clearance/volume_of_distribution
     Recommended_total_daily_dose = 450 * drug_clearance  
     dose = Recommended_total_daily_dose /1    #given every 24 hours                                  
