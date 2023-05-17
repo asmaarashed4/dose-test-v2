@@ -24,7 +24,7 @@ def calculate():
  dosing_freruency = 8.00
 
  if dosing_freruency == 8.00:
-    volume_of_distribution = 1.75*(WT/0.93)
+    volume_of_distribution = 1.75*(WT/2.9)
     drug_clearance = (0.34*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
     ke= drug_clearance/volume_of_distribution
     Recommended_total_daily_dose = 450 * drug_clearance  
@@ -38,7 +38,7 @@ def calculate():
      st.write("prediction= ",round(prediction,2))
      
  if dosing_freruency == 12.00:
-    volume_of_distribution = 1.75*(WT/0.93)
+    volume_of_distribution = 1.75*(WT/2.9)
     drug_clearance = (0.34*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
     ke= drug_clearance/volume_of_distribution
     Recommended_total_daily_dose = 450 * drug_clearance  
@@ -52,7 +52,7 @@ def calculate():
      st.write("prediction= ",round(prediction,2))
 
  if dosing_freruency == 18.00:
-    volume_of_distribution = 1.75*(WT/0.93)
+    volume_of_distribution = 1.75*(WT/2.9)
     drug_clearance = (0.34*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
     ke= drug_clearance/volume_of_distribution
     Recommended_total_daily_dose = 450 * drug_clearance  
@@ -66,7 +66,7 @@ def calculate():
      st.write("prediction= ",round(prediction,2))
 
  if dosing_freruency == 24.00:
-    volume_of_distribution = 1.75*(WT/0.93)
+    volume_of_distribution = 1.75*(WT/2.9)
     drug_clearance = (0.34*((WT/2.9)**0.75)) * ((1/SC)**0.267) * (1/(1+((PMA/34.8))**(-4.52) ))
     ke= drug_clearance/volume_of_distribution
     Recommended_total_daily_dose = 450 * drug_clearance  
